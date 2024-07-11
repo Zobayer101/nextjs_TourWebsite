@@ -1,0 +1,127 @@
+
+
+.footerCoun{
+    height: 90vh;
+    width: 100%;
+}
+.newLetter{
+    width: 100%;
+    height: 35%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 40px;
+}
+.bigtext{
+    font-size:30px;
+    font-weight: 1000;
+    color: rgb(37, 36, 34);
+}
+.newLetter input{
+    height: 40px;
+    width:250px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 0px  ;
+    outline: none;
+}
+.newLetter button{
+    box-shadow: 1px 2px 8px 0px  ;
+    height: 40px;
+    border: none;
+    width:80px;
+    background: #673dff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px ;
+    margin-left: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+.newLetter button:hover{
+    background:#8510f1;
+}
+.saltext{
+    color:  rgb(37, 36, 34);
+    font-size: 13px;
+}
+.section{
+    width: 100%;
+    height: 65%;
+    background: #673dff;
+    display: flex;
+    
+    
+}
+.firstSection{
+justify-content: space-around;
+    width: 50%;
+    display: flex;
+}
+.scoundSection{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.finesh{
+    width: 100%;
+    height: 10vh;
+    background: #673dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.finesh p{
+    color: #fff;
+    font-size: 10px;
+}
+.section .para{
+    padding: 5px;
+    color: #fff;
+    margin-top:20px;
+    transition: .5s;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.section .para:hover{
+    border-bottom: 2px solid #fff;
+}
+.section p{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+.section p:hover{
+ margin-left: 4px;
+}
+.Connect i{
+  color: #fff;
+  font-size: 25px;
+  padding-inline-start: 5px;
+
+}
+@media screen and (max-width:850px){
+    
+    .newLetter{
+        height: 50%;
+        flex-direction: column;
+    }
+   .section{
+    height: 70%;
+    align-items: center;
+  
+    flex-direction: column;
+   }
+   .scoundSection{
+    margin-top: 50px;
+    width: 100%;
+   }
+   .firstSection{
+    width: 100%;
+   }
+}
