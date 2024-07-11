@@ -1,13 +1,22 @@
-'use client'
+"use client";
 import "../Design/Heder.css";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
 import { useState } from "react";
 
 const Header = () => {
   const [bar, setBar] = useState(true);
-  const postData = () => {
-    alert('data')
-  }
+  const postData = async () => {
+    const url = "http://localhost:3000/api/users";
+    const response = await fetch(url, {
+      method: "post",
+      body: JSON.stringify({ ID: "2" }),
+    });
+    
+    const data = await response.json();
+   
+    location.assign(data.Link);
+    
+  };
   return (
     <div>
       <div className="Countuner">
@@ -30,11 +39,10 @@ const Header = () => {
         </div>
         <div className="BTN">
           <button
-            onClick={() => {
-              postData();
-            }}
+            onClick={()=>postData()
+            }
           >
-            Let's go 
+            Lets go
           </button>
         </div>
       </div>
